@@ -1,0 +1,66 @@
+<!-- mislibros.html -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+    <meta name="description" content="Página de mis libros, html, autores y géneros favoritos">
+    <!-- Descripción para motores de búsqueda -->
+    <meta name="keywords"
+        content="Palabras clave, separadas, por, comas: libros, autores, géneros, favoritos, html, css, javascript">
+    <!-- Palabras clave para SEO -->
+    <meta name="author" content="Manuel Nicolás Savio"> <!-- Autor de la página -->
+
+    <title>Mis Libros - Mi Biblioteca</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo de estilos CSS -->
+</head>
+
+<body>
+    <!-- Contenido principal de la página -->
+
+    <!-- Título principal de la página -->
+    <h1>Bienvenido a Mi Biblioteca</h1>
+
+    <!-- Barra de navegación -->
+    <nav>
+        <!-- Lista de elementos del menú -->
+        <ul class="menu">
+            <!-- Elemento del menú para Inicio -->
+            <li><a href="index.html">Inicio</a></li>
+            <!-- Elemento del menú para Mis Libros (página actual) -->
+            <li><a href="libros.html" class="activo">Mis Libros</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor del contenido principal -->
+    <div class="contenido">
+        <!-- Título secundario de la sección -->
+        <!-- Este es un título de nivel 2 (h2) que describe la sección que viene a continuación -->
+        <h2>Visualización de Datos</h2>
+        <!-- Contenedor para el iframe - actúa como un "marco" o "caja" que contiene la hoja de cálculo -->
+        <div class="iframe-container">
+            <!-- Iframe: una ventana dentro de la página que muestra contenido de otra fuente -->
+            <!-- Es como poner una "televisión" dentro de tu página que muestra otra página web -->
+
+
+            <!-- src: la "dirección" de donde viene el contenido que se mostrará en el iframe -->
+            <!-- En este caso, es un enlace especial de Google Sheets que permite mostrar una hoja de cálculo -->
+            <!-- Cierre del iframe - todo el contenido entre <iframe> y </iframe> es lo que se mostrará  -->
+
+
+           <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vStYppfgBuUSnCJwWBW6pTFJS-zN-Lvw5m4SFnCerg2pHSbDdoYLbA75Ci2VOXDP5NwnBN-yhoj-dBX/pubhtml?widget=true&amp;headers=false"></iframe>
+
+
+            <!-- Cierre del contenedor del iframe -->
+        </div>
+    </div>
+
+    <footer>
+        &copy; | Manuel Nicolás Savio | 2025 Mi Biblioteca. Todos los derechos reservados.
+    </footer>
+
+</body>
+
+</html>

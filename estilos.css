@@ -1,0 +1,124 @@
+/* estilos.css */
+/* Reset básico para todos los elementos */
+* {
+    margin: 0;           /* Elimina márgenes por defecto */
+    padding: 0;          /* Elimina rellenos por defecto */
+    box-sizing: border-box; /* Hace que el padding y border se incluyan en el ancho/alto */
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente principal de texto */
+    background-color: #e6f2ff; /* Color de fondo azul cielo claro */
+}
+
+/* Contenedor principal del contenido */
+.contenido {
+    max-width: 1200px;   /* Ancho máximo del contenido */
+    margin: 0 auto;      /* Centra el contenido horizontalmente */
+    padding: 20px;       /* Espacio interno alrededor del contenido */
+}
+
+/* Estilos para el título principal h1 */
+h1 {
+    text-align: center;      /* Centra el texto horizontalmente */
+    background-color: #87CEEB; /* Color azul cielo para el fondo */
+    color: #2c3e50;         /* Color azul oscuro para el texto */
+    line-height: 80px;      /* Altura de línea igual a la altura del elemento */
+    margin-bottom: 0;       /* Elimina separación con la barra de navegación */
+}
+
+/* Estilos para los párrafos */
+p {
+    color: #2c3e50;        /* Color azul oscuro para el texto */
+    padding: 10px;         /* Espacio interno alrededor del texto */
+    line-height: 1.6;      /* Espaciado entre líneas para mejor lectura */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #4682B4; /* Color azul acero para la barra de navegación */
+    padding: 0;            /* Elimina el relleno interno */
+}
+
+/* Estilos para la lista del menú */
+.menu {
+    list-style: none;      /* Elimina los puntos/bullets de la lista */
+    display: flex;         /* Convierte la lista en un contenedor flexible (horizontal) */
+    justify-content: center; /* Centra los elementos del menú horizontalmente */
+    max-width: 1200px;     /* Ancho máximo del menú */
+    margin: 0 auto;        /* Centra el menú horizontalmente */
+}
+
+/* Estilos para cada elemento de la lista del menú */
+.menu li {
+    margin: 0 15px;        /* Espacio horizontal entre elementos del menú */
+}
+
+/* Estilos para los enlaces del menú */
+.menu a {
+    color: white;          /* Color blanco para el texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 15px 25px;    /* Espacio interno alrededor del texto del enlace */
+    border-radius: 5px;    /* Esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+    font-weight: bold;     /* Texto en negrita */
+    display: block;        /* Hace que el enlace ocupe todo el espacio disponible */
+}
+
+/* Estilos para cuando el cursor pasa sobre los enlaces del menú */
+.menu a:hover {
+    background-color: #5F9EA0; /* Color azul cadete cuando se pasa el mouse */
+}
+
+/* Estilos para el enlace activo (página actual) */
+.menu a.activo {
+    background-color: #1E90FF; /* Color azul esquiv para el enlace activo */
+}
+
+/* Estilos para los títulos secundarios h2 */
+h2 {
+    color: #2c3e50;        /* Color azul oscuro para el texto */
+    text-align: center;    /* Centra el texto horizontalmente */
+    margin: 20px 0;        /* Espacio arriba y abajo del título */
+}
+
+
+/* Estilos para elementos iframe (ventanas incrustadas) */
+iframe {
+    /* Ancho del iframe: 100% significa que ocupará todo el ancho disponible de su contenedor */
+    width: 100%;
+    
+    /* Alto fijo del iframe: 400 píxeles de altura */
+    height: 400px;
+    
+    /* Elimina el borde por defecto que tienen los iframes */
+    border: none;    
+    /* Hace que el iframe se comporte como un elemento de bloque (ocupa toda la línea) */
+    display: block;
+}
+
+/* Estilos para el contenedor que envuelve el iframe */
+.iframe-container {
+    /* Color de fondo del contenedor: gris muy claro casi blanco */
+    background-color: rgb(250, 249, 249);
+    
+    /* Esquinas redondeadas: 10 píxeles de radio en todas las esquinas */
+    border-radius: 10px;
+    
+    /* Oculta cualquier contenido que se salga del contenedor (evita desbordamientos) */
+    overflow: hidden;
+    
+    /* Sombra suave alrededor del contenedor para efecto de elevación */
+    /* rgba(0, 0, 0, 0.05) significa: rojo 0, verde 0, azul 0, transparencia 5% */
+    /* 0 = desplazamiento horizontal, 4px = desplazamiento vertical, 8px = difuminado */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer{
+   background-color: #5F9EA0; /* Color azul cadete cuando se pasa el mouse */
+   text-align: center;   /* Alineaciòn del texto en el footer o pie de la pàgina */
+   padding: 10px;       /* Espacio interno alrededor del texto del footer  o pie de la pàgina */
+   color: white;          /* Color blanco para el texto de los enlaces */
+   margin-top: 20px;     /* Espacio arriba y  del footer */
+}
